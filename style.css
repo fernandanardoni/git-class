@@ -11,6 +11,7 @@ html, body {
     box-sizing: border-box;
     display: flex;
     font-family: 'Source Code Pro', sans-serif;
+    background: burlywood;
 }
 
 input {
@@ -23,6 +24,16 @@ input, label {
     top: 300px 
 }
 
+label {
+    font-size: 36px;
+    color: burlywood;
+    transform: 0.2s;
+}
+
+label:hover {
+    font-size: 40px;
+}
+
 input:checked~label {
     left: 640px;
 }
@@ -31,31 +42,43 @@ input:checked~.presentation {
     width: 50%;
 }
 
+input:checked~.features {
+    display: flex;
+}
+
 .presentation {
     height: 100%;
-    width: 100%;
+    width: 90%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    border-radius: 0 10px 10px 0;
     background: brown;
+    box-shadow: 0px 3px 11px 0px #000000 ;
 
 }
 
 .presentation img {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     box-shadow: 0px 3px 11px 0px #000000;
 }
 
+.presentation img:hover {
+    height: 205px;
+    width: 205px;
+}
+
 
 .features {
-    display: flex;
-
+    display: none;
+    width: 50%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
+    
 }
+
 
