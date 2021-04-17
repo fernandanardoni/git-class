@@ -26,7 +26,7 @@ input, label {
 
 label {
     font-size: 36px;
-    color: burlywood;
+    color: #deb887;
     transform: 0.2s;
 }
 
@@ -70,6 +70,22 @@ input:checked~.features {
     width: 205px;
 }
 
+.presentation span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.presentation span a {
+    text-decoration: none;
+    color: black; 
+}
+
+.presentation span a:hover {
+    color: #deb887;
+}
+
 
 .features {
     display: none;
@@ -77,8 +93,12 @@ input:checked~.features {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+ 
+}
 
-    
+.features details summary {
+    list-style-image: url('./img/arrow-right.svg');
+   
 }
 
 
