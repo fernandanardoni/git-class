@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
+@import url('//db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold');
+@import url('//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book');
 
 * {
     margin: 0;
@@ -10,8 +12,10 @@ html, body {
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    font-family: 'Source Code Pro', sans-serif;
-    background: burlywood;
+    font-family: "Circular Std Book", sans-serif;
+    background: whitesmoke;
+    color: #39424b;
+    font-size: 20px;
 }
 
 input {
@@ -26,12 +30,12 @@ input, label {
 
 label {
     font-size: 36px;
-    color: #deb887;
-    transform: 0.2s;
+    color: #39424b;
+    cursor: pointer;
 }
 
 label:hover {
-    font-size: 40px;
+    font-size: 37px;
 }
 
 input:checked~label {
@@ -52,47 +56,58 @@ input:checked~.features {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 0 10px 10px 0;
-    background: brown;
+    /* border-radius: 0 10px 10px 0; */
+    background:#5DADE2;
     box-shadow: 0px 3px 11px 0px #000000 ;
 
-}
-
-.presentation img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    box-shadow: 0px 3px 11px 0px #000000;
-}
-
-.presentation img:hover {
-    height: 205px;
-    width: 205px;
 }
 
 .presentation span {
     display: flex;
     flex-direction: column;
+    align-items: center;  
+}
+
+.presentation span img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding-bottom: 10px;
+    filter: drop-shadow(0 0 0.35rem gray);
+    /* box-shadow: 0px 3px 11px 0px #000000; */
+}
+
+.presentation img:hover {
+    height: 105px;
+    width: 105px;
+}
+
+.presentation span .links a {
+    display: flex;
     align-items: center;
-    
-}
-
-.presentation span a {
     text-decoration: none;
-    color: black; 
+    color: #39424b; 
 }
 
-.presentation span a:hover {
-    color: #deb887;
+.presentation span .links a img{
+    width: 30px;
+    padding-right: 5px; 
 }
 
+.links {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .features {
     display: none;
     width: 50%;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
  
 }
 
