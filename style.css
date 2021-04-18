@@ -7,12 +7,17 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Circular Std Book' ;
+    src: url('./fonts/circular-std-book.ttf');
+}
+
 html, body {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    font-family: "Circular Std Book", sans-serif;
+    font-family: 'Circular Std Book';
     background: whitesmoke;
     color: #39424b;
     font-size: 20px;
