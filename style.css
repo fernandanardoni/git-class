@@ -1,158 +1,163 @@
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
-    font-family: 'Circular Std Book' ;
-    src: url('./fonts/circular-std-book.ttf');
+  font-family: "Circular Std Book";
+  src: url("./fonts/circular-std-book.ttf");
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    font-family: 'Circular Std Book';
-    background: whitesmoke;
-    color: #39424b;
-    font-size: 20px;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 20px;
+  font-family: "Circular Std Book";
+  background: #f5f5f5;
+  color: #39424b;
+}
+
+input,
+label {
+  position: fixed;
+  right: 150px;
+  top: 300px;
 }
 
 input {
-    display: none;
+  display: none;
 }
 
-input, label {
-    position: fixed;
-    right: 150px;
-    top: 300px 
+input:checked ~ label {
+  left: 640px;
+}
+
+input:checked ~ .presentation {
+  width: 50%;
+}
+
+input:checked ~ .features {
+  display: flex;
 }
 
 label {
-    width: 50px;
-    font-size: 36px;
-    color: #39424b;
-    cursor: pointer;
+  width: 50px;
+  font-size: 36px;
+  color: #39424b;
+  cursor: pointer;
 }
 
 label:hover {
-    font-size: 37px;
-}
-
-input:checked~label {
-    left: 640px;
-}
-
-input:checked~.presentation {
-    width: 50%;
-}
-
-input:checked~.features {
-    display: flex;
+  font-size: 37px;
 }
 
 .presentation {
-    height: 100%;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background:#5DADE2;
-    box-shadow: 0px 3px 11px 0px #000000 ;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 90%;
+  background: #5dade2;
+  box-shadow: 0px 3px 11px 0px #808080;
 }
 
 .presentation span {
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .presentation span img {
-    height: 100px;
-    width: 100px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    filter: drop-shadow(0 0 0.35rem gray);
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 0.35rem #808080);
 }
 
 .presentation span img:hover {
-    height: 105px;
-    width: 105px;
-}
-
-.presentation span .links a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #39424b;
-    font-size: 16px;
-}
-
-.presentation span .links a:hover{
-    color: #566370;
-    font-size: 17px;
-}
-
-.presentation span .links a img{
-    width: 20px;
-    padding-right: 5px; 
-}
-
-.links {
-    height: 50px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  height: 105px;
+  width: 105px;
 }
 
 .presentation footer {
-    position: fixed;
-    bottom: 5px;
-    font-size: 12px;
+  position: fixed;
+  bottom: 5px;
+  font-size: 12px;
 }
 
 .presentation footer img {
-    width: 12px;
+  width: 12px;
 }
 
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  width: 100%;
+}
 
+.links a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #39424b;
+  font-size: 16px;
+}
+
+.links ahover {
+  color: #566370;
+  font-size: 17px;
+}
+
+.links a img {
+  width: 20px;
+  padding-right: 5px;
+}
+
+.links a img:hover {
+  width: 21px;
+}
 
 .features {
-    display: none;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
- 
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
 }
-
 
 .features details summary {
-    outline: none;
-    cursor: pointer;
-    border-bottom: 2px solid #5DADE2;
-    list-style-image: url('./img/arrow-right.svg');
-   
+  outline: none;
+  cursor: pointer;
+  border-bottom: 2px solid #5dade2;
+  list-style-image: url("./img/arrow-right.svg");
 }
 
-.features details summary:hover { 
-    border-bottom: 1px solid #5DADE2;
-    
+.features details summary:hover {
+  border-bottom: 1px solid #5dade2;
 }
-
-
 
 .features details summary img {
-    width: 20px;
- 
+  width: 20px;
+}
+
+.features details p {
+  text-indent: 10px;
+  font-size: 16px;
 }
 
 .features details p img {
-    width: 20px;
- 
+  width: 20px;
 }
 
+/*# sourceMappingURL=style.css.map */
